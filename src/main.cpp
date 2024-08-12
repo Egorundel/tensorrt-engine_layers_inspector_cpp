@@ -62,7 +62,7 @@ int main() {
     Logger logger;
 
     // Load the TensorRT engine file
-    ifstream engineFile("/home/egorundel/projects/experiment/trt_engine_inspector/YOLOv8_m_night_INT8_bs12.trt", ios::binary);
+    ifstream engineFile("../engine.trt", ios::binary);
     if (!engineFile) {
         cout << "Failed to open engine file." << endl;
         return -1;

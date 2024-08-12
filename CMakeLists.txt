@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(trt_engine_inspector)
+project(tensorrt-engine_layers_inspector_cpp)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 14)
@@ -26,17 +26,17 @@ link_directories(
 file(GLOB My_Source_Files ${PROJECT_SOURCE_DIR}/src/*.cpp)
 
 # Add executable
-add_executable(trt_engine_inspector ${My_Source_Files})
+add_executable(tensorrt-engine_layers_inspector_cpp ${My_Source_Files})
 
 # Include directories
-target_include_directories(trt_engine_inspector PUBLIC 
+target_include_directories(tensorrt-engine_layers_inspector_cpp PUBLIC 
     ${PROJECT_SOURCE_DIR}/include 
     ${TensorRT_INCLUDE_DIRS} 
     ${TensorRT_SAMPLE_DIR}/common
 )
 
 # Link libraries
-target_link_libraries(trt_engine_inspector PUBLIC 
+target_link_libraries(tensorrt-engine_layers_inspector_cpp PUBLIC 
     ${CMAKE_THREAD_LIBS_INIT}
     ${TensorRT_LIBRARIES}
 )
