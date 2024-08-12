@@ -1,4 +1,4 @@
-# tensorrt-engine_layers_inspector_cpp
+# TensorRT Engine Inspector (layers)
 
 #### Change this line for your engine
 
