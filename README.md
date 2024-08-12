@@ -1,6 +1,6 @@
 # TensorRT Engine Inspector (layers)
 
-### Description
+## Description
 
 It looks at the layers in the engine and provides information about them. However, in order to have as much information about the layers as possible, when creating the engine, use:
 1. if you are building the engine from C++ code 
@@ -14,14 +14,14 @@ or
 profilingVerbosity=detailed
 ```
 
-### Change this line for your engine
+## Change this line for your engine
 
 ```cpp
 // Load the TensorRT engine file
 ifstream engineFile("../engine.trt", ios::binary);
 ```
 
-### How to launch?
+## How to launch?
 
 ```shell
 # download repository
@@ -45,6 +45,6 @@ make -j$(nproc)
 ./tensorrt-engine_layers_inspector_cpp
 ```
 
-### Screenshot of work
+## Screenshot of work
 
 ![screen0](./images/screen0.png)
