@@ -48,3 +48,11 @@ make -j$(nproc)
 ## Screenshot of work
 
 ![screen0](./images/screen0.png)
+
+### Tested on:  
+
+**TensorRT Version**: 8.6.1.6  
+**NVIDIA GPU**: RTX 3060  
+**NVIDIA Driver Version**: 555.42.02  
+**CUDA Version**: 11.1  
+**CUDNN Version**:  8.0.6  
