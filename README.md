@@ -1,5 +1,19 @@
 # TensorRT Engine Inspector (layers)
 
+#### Description/Foreword
+
+It looks at the layers in the engine and provides information about them. However, in order to have as much information about the layers as possible, when creating the engine, use:
+1. if you are building the engine from C++ code 
+```cpp
+config->setProfilingVerbosity(nvinfer1::ProfilingVerbosity::kDETAILED);
+```  
+or  
+
+2. if you are building the engine through `trtexec`
+```shell
+profilingVerbosity=detailed
+```
+
 #### Change this line for your engine
 
 ```cpp
