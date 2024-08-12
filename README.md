@@ -1,6 +1,6 @@
 # TensorRT Engine Inspector (layers)
 
-### Description/Foreword
+### Description
 
 It looks at the layers in the engine and provides information about them. However, in order to have as much information about the layers as possible, when creating the engine, use:
 1. if you are building the engine from C++ code 
